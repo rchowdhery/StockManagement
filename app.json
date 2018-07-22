@@ -1,0 +1,9 @@
+{
+    "name": "StockManagement",
+
+    "requires": [
+        "ext-charts"
+    ],
+
+    "id": "7f1799f0-eb08-4134-9ac1-635b643652f2"
+}
