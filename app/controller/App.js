@@ -6,12 +6,12 @@ Ext.define('StockManagement.controller.App', {
     views: [
         'Viewport',
         'layout.Menu',
-        'layout.Center',
         'layout.South',
+        'layout.Center',
         'layout.Landing',
         'layout.Statusbar',
-        'timesheet.TimesheetList',
-        'options.CurrencyList'
+        'options.CurrencyList',
+        'timesheet.TimesheetList'
     ],
     refs: [
         {
@@ -47,7 +47,7 @@ Ext.define('StockManagement.controller.App', {
 
         var me = this;
         // create the viewport, effectively creating the view for our application
-       // Ext.setLocale('en_US');
+        // Ext.setLocale('en_US');
         Ext.create('StockManagement.view.Viewport');
         config = {
             xtype: 'layout.landing'
@@ -273,13 +273,13 @@ Ext.define('StockManagement.controller.App', {
      * @private
      */
     updateCenterRegion: function (config) {
-        var me = this,
-            center = me.getCenterRegion();
-
-        // remove all existing content
-        //center.removeAll(true);
-        // add new content
+        var me = this;
+        var center = me.getCenterRegion();
         center.add(config);
+        var currentActiveComponent = Ext.ComponentQuery.query(Ext.String.format("[xtype={0}]", config.xtype))[0];
+        if (currentActiveComponent) {
+            center.setActiveTab(currentActiveComponent);
+        }
     },
     /**
      * After a REST response is completed, this method will marshall the response data and inform other methods with relevant data

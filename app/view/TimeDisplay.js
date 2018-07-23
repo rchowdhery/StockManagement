@@ -59,8 +59,8 @@ Ext.define('StockManagement.view.TimeDisplay', {
 
         var format = Ext.getDateFormat();
         var string = Ext.Date.format(dt, format);
-
-        this.el.update(string);
+        this.setText(string);
+        //this.el.update(string);
     },
     /**
      * When the widget is removed, destroy both tasks.
