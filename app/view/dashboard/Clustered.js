@@ -3,7 +3,7 @@
     xtype: 'clustered-column',
     frame: true,
     bodyPadding: 5,
-    width: '50%',
+    width: '40%',
     layout: {
         type: 'vbox',
         align: 'stretch'
