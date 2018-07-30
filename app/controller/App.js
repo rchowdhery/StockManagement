@@ -105,6 +105,23 @@ Ext.define('StockManagement.controller.App', {
                     pageSize: 10
                 });
                 break;
+            case 'customerList':
+                config = {
+                    xtype: 'customer.CustomerList'
+                };
+                Ext.create('StockManagement.store.CustomerStore', {
+                    pageSize: 10
+                });
+                break;
+            case 'vendorList':
+                config = {
+                    xtype: 'vendor.VendorList'
+                };
+                Ext.create('StockManagement.store.VendorStore', {
+                    pageSize: 10
+                });
+                break;
+                
             case 'option/currencies':
                 config = {
                     xtype: 'options.CurrencyList',

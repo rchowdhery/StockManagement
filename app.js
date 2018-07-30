@@ -39,14 +39,18 @@ Ext.application({
         'Base',
         'App',
         'Security',
-        'Stocks'
+        'Stocks',
+        'Customer',
+        'Vendor'
     ],
     requires: [
     ],
     stores: [
         'StockManagement.store.TimesheetStore',
         'StockManagement.store.StockStore',
-        'StockManagement.store.options.CurrencyStore'
+        'StockManagement.store.options.CurrencyStore',
+        'StockManagement.store.CustomerStore',
+        'StockManagement.store.VendorStore'
     ],
     /**
      * launch is called immediately upon availability of our app

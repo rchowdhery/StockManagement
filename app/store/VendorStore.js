@@ -1,10 +1,10 @@
-﻿Ext.define('StockManagement.store.CustomerStore', {
+﻿Ext.define('StockManagement.store.VendorStore', {
     extend: 'Ext.data.Store',
-    storeId: 'CustomerStore',
+    storeId: 'VendorStore',
     autoLoad: true,
     fields: [
         {
-            name: 'CustomerName',
+            name: 'VendorName',
             type: 'string'
         },
         {
@@ -20,11 +20,7 @@
             type: 'string'
         },
         {
-            name: 'TINNumber',
-            type: 'string'
-        },
-        {
-            name: 'VATNumber',
+            name: 'GSTNumber',
             type: 'string'
         },
         {
@@ -50,12 +46,11 @@
     ],
     data: [
         {
-            CustomerName: 'OLIVIA',
+            VendorName: 'OLIVIA',
             CompanyName: 'MOSFET',
             EmailId: 'Olivia.gorge@outlook.com',
             PhoneNumber: '011 1234-1254-098',
-            TINNumber: '25000000005',
-            VATNumber: 'A12300',
+            GSTNumber: '25000000005',
             Street: '504 Rosewood Lane',
             ZipCode: '31061',
             State: 'Milledgeville',
@@ -63,12 +58,11 @@
             Country: 'United State'
         },
         {
-            CustomerName: 'OLIVIA',
+            VendorName: 'OLIVIA',
             CompanyName: 'MOSFET',
             EmailId: 'Olivia.gorge@outlook.com',
             PhoneNumber: '011 1234-1254-098',
-            TINNumber: '25000000005',
-            VATNumber: 'A12300',
+            GSTNumber: '25000000005',
             Street: '504 Rosewood Lane',
             ZipCode: '31061',
             State: 'Milledgeville',
@@ -76,12 +70,11 @@
             Country: 'United State'
         },
         {
-            CustomerName: 'OLIVIA',
+            VendorName: 'OLIVIA',
             CompanyName: 'MOSFET',
             EmailId: 'Olivia.gorge@outlook.com',
             PhoneNumber: '011 1234-1254-098',
-            TINNumber: '25000000005',
-            VATNumber: 'A12300',
+            GSTNumber: '25000000005',
             Street: '504 Rosewood Lane',
             ZipCode: '31061',
             State: 'Milledgeville',
@@ -89,12 +82,11 @@
             Country: 'United State'
         },
         {
-            CustomerName: 'OLIVIA',
+            VendorName: 'OLIVIA',
             CompanyName: 'MOSFET',
             EmailId: 'Olivia.gorge@outlook.com',
             PhoneNumber: '011 1234-1254-098',
-            TINNumber: '25000000005',
-            VATNumber: 'A12300',
+            GSTNumber: '25000000005',
             Street: '504 Rosewood Lane',
             ZipCode: '31061',
             State: 'Milledgeville',
@@ -102,12 +94,11 @@
             Country: 'United State'
         },
         {
-            CustomerName: 'OLIVIA',
+            VendorName: 'OLIVIA',
             CompanyName: 'MOSFET',
             EmailId: 'Olivia.gorge@outlook.com',
             PhoneNumber: '011 1234-1254-098',
-            TINNumber: '25000000005',
-            VATNumber: 'A12300',
+            GSTNumber: '25000000005',
             Street: '504 Rosewood Lane',
             ZipCode: '31061',
             State: 'Milledgeville',
@@ -115,12 +106,11 @@
             Country: 'United State'
         },
         {
-            CustomerName: 'OLIVIA',
+            VendorName: 'OLIVIA',
             CompanyName: 'MOSFET',
             EmailId: 'Olivia.gorge@outlook.com',
             PhoneNumber: '011 1234-1254-098',
-            TINNumber: '25000000005',
-            VATNumber: 'A12300',
+            GSTNumber: '25000000005',
             Street: '504 Rosewood Lane',
             ZipCode: '31061',
             State: 'Milledgeville',

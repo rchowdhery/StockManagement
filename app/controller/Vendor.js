@@ -1,44 +1,44 @@
 ﻿/**
  * Controller for all car-related management functionality
  */
-Ext.define('StockManagement.controller.Stocks', {
+Ext.define('StockManagement.controller.Vendor', {
     extend: 'StockManagement.controller.Base',
     stores: [
 
     ],
     views: [
-        'inventory.StockList',
-        'inventory.edit.Form',
-        'inventory.edit.Window'
+        'vendor.VendorList',
+        'vendor.edit.Form',
+        'vendor.edit.Window'
     ],
     refs: [
         {
             ref: 'CarList',
-            selector: '[xtype=inventory.StockList]'
+            selector: '[xtype=vendor.VendorList]'
         },
         {
             ref: 'CarEditWindow',
-            selector: '[xtype=inventory.edit.window]'
+            selector: '[xtype=vendor.edit.window]'
         },
         {
             ref: 'CarEditForm',
-            selector: '[xtype=inventory.edit.form]'
+            selector: '[xtype=vendor.edit.form]'
         },
         {
             ref: 'CarImageView',
-            selector: '[xtype=inventory.edit.tab.image]'
+            selector: '[xtype=vendor.edit.tab.image]'
         }
     ],
     init: function () {
         this.listen({
 
             component: {
-                'grid[xtype=inventory.StockList]': {
+                'grid[xtype=vendor.VendorList]': {
                     // beforerender: this.loadRecords,
                     itemdblclick: this.edit
                     //itemcontextmenu: this.showContextMenu
                 },
-                'grid[xtype=inventory.StockList] button#add': {
+                'grid[xtype=vendor.VendorList] button#add': {
                     click: this.edit
                 }
             }
@@ -296,8 +296,8 @@ Ext.define('StockManagement.controller.Stocks', {
         // show window
         //me.loadDetail(record, me, me.showEditWindow);
         // me.loadDetail(me.showEditWindow);
-        var win = Ext.widget('inventory.edit.window', {
-            title: 'Edit Inventory'
+        var win = Ext.widget('vendor.edit.window', {
+            title: 'Edit Vendor'
         });
         win.show();
     },

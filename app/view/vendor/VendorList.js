@@ -1,17 +1,17 @@
 ﻿/**
  * Grid for displaying Customer details
  */
-Ext.define('StockManagement.view.customer.CustomerList', {
+Ext.define('StockManagement.view.vendor.VendorList', {
     extend: 'Ext.grid.Panel',
-    alias: 'widget.customer.CustomerList',
+    alias: 'widget.vendor.VendorList',
     requires: [
         'Ext.grid.column.Boolean',
         'Ext.grid.column.Date',
         'Ext.grid.column.Number'
     ],
-    title: 'Customers',
+    title: 'Vendors',
     iconCls: 'icon_tag',
-    store: 'CustomerStore',
+    store: 'VendorStore',
     closable: true,
     viewConfig: {
         deferEmptyText: false,
@@ -26,8 +26,8 @@ Ext.define('StockManagement.view.customer.CustomerList', {
                 defaults: {},
                 items: [
                     {
-                        text: 'Customer Name',
-                        dataIndex: 'CustomerName',
+                        text: 'Vendor Name',
+                        dataIndex: 'VendorName',
                         width: 150
                     },
                     {
@@ -46,14 +46,10 @@ Ext.define('StockManagement.view.customer.CustomerList', {
                         width: 170
                     },
                     {
-                        text: 'TIN Number',
-                        dataIndex: 'TINNumber'
+                        text: 'GST Number',
+                        dataIndex: 'GSTNumber'
                     },
 
-                    {
-                        text: 'VAT Number',
-                        dataIndex: 'VATNumber'
-                    },
                     {
                         text: 'Street',
                         dataIndex: 'Street',
@@ -91,14 +87,14 @@ Ext.define('StockManagement.view.customer.CustomerList', {
                             xtype: 'button',
                             itemId: 'add',
                             iconCls: 'icon_add',
-                            text: 'Add Customer'
+                            text: 'Add Vendor'
                         },
                         '-',
                         {
                             xtype: 'button',
                             itemId: 'search',
                             iconCls: 'icon_search',
-                            text: 'Search Customer'
+                            text: 'Search Vendor'
                         },
                         '-',
                         {

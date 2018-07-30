@@ -1,9 +1,9 @@
 ﻿/**
  * Main panel for displaying details for {@link CarTracker.model.Car} records
  */
-Ext.define('StockManagement.view.customer.edit.InformationTab', {
+Ext.define('StockManagement.view.vendor.edit.InformationTab', {
     extend: 'Ext.panel.Panel',
-    alias: 'widget.customer.edit.informationTab',
+    alias: 'widget.vendor.edit.informationTab',
     layout: 'form',
     initComponent: function () {
         var me = this;
@@ -23,8 +23,8 @@ Ext.define('StockManagement.view.customer.edit.InformationTab', {
                             items: [
                                 {
                                     xtype: 'textfield',
-                                    name: 'CustomerName',
-                                    fieldLabel: 'Customer Name'
+                                    name: 'VendorName',
+                                    fieldLabel: 'Vendor Name'
                                 },
                                 {
                                     xtype: 'textfield',
@@ -53,13 +53,8 @@ Ext.define('StockManagement.view.customer.edit.InformationTab', {
                             items: [
                                 {
                                     xtype: 'textfield',
-                                    name: 'TINNumber',
-                                    fieldLabel: 'TIN Number'
-                                },
-                                {
-                                    xtype: 'textfield',
-                                    name: 'VATNumber',
-                                    fieldLabel: 'VAT Number'
+                                    name: 'GSTNumber',
+                                    fieldLabel: 'GST Number'
                                 }
                             ]
                         },

@@ -1,44 +1,44 @@
 ﻿/**
  * Controller for all car-related management functionality
  */
-Ext.define('StockManagement.controller.Stocks', {
+Ext.define('StockManagement.controller.Customer', {
     extend: 'StockManagement.controller.Base',
     stores: [
 
     ],
     views: [
-        'inventory.StockList',
-        'inventory.edit.Form',
-        'inventory.edit.Window'
+        'customer.CustomerList',
+        'customer.edit.Form',
+        'customer.edit.Window'
     ],
     refs: [
         {
             ref: 'CarList',
-            selector: '[xtype=inventory.StockList]'
+            selector: '[xtype=customer.CustomerList]'
         },
         {
             ref: 'CarEditWindow',
-            selector: '[xtype=inventory.edit.window]'
+            selector: '[xtype=customer.edit.window]'
         },
         {
             ref: 'CarEditForm',
-            selector: '[xtype=inventory.edit.form]'
+            selector: '[xtype=customer.edit.form]'
         },
         {
             ref: 'CarImageView',
-            selector: '[xtype=inventory.edit.tab.image]'
+            selector: '[xtype=customer.edit.tab.image]'
         }
     ],
     init: function () {
         this.listen({
 
             component: {
-                'grid[xtype=inventory.StockList]': {
+                'grid[xtype=customer.CustomerList]': {
                     // beforerender: this.loadRecords,
                     itemdblclick: this.edit
                     //itemcontextmenu: this.showContextMenu
                 },
-                'grid[xtype=inventory.StockList] button#add': {
+                'grid[xtype=customer.CustomerList] button#add': {
                     click: this.edit
                 }
             }
@@ -296,8 +296,8 @@ Ext.define('StockManagement.controller.Stocks', {
         // show window
         //me.loadDetail(record, me, me.showEditWindow);
         // me.loadDetail(me.showEditWindow);
-        var win = Ext.widget('inventory.edit.window', {
-            title: 'Edit Inventory'
+        var win = Ext.widget('customer.edit.window', {
+            title: 'Edit Customer'
         });
         win.show();
     },

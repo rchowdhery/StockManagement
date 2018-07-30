@@ -1,10 +1,10 @@
 /**
  * Form used for creating and editing Staff Members
  */
-Ext.define('StockManagement.view.customer.edit.Form', {
+Ext.define('StockManagement.view.vendor.edit.Form', {
     extend: 'Ext.form.Panel',
-    alias: 'widget.customer.edit.form',
-    id: 'CustomerForm',
+    alias: 'widget.vendor.edit.form',
+    id: 'VendorForm',
     requires: [
         'Ext.tab.Panel',
         'Ext.form.FieldContainer',
@@ -18,8 +18,7 @@ Ext.define('StockManagement.view.customer.edit.Form', {
         'Ext.ux.form.ItemSelector',
         'StockManagement.ux.form.field.RemoteComboBox',
         'StockManagement.ux.form.field.plugin.ClearTrigger',
-        'StockManagement.view.customer.edit.InformationTab',
-        'StockManagement.view.customer.edit.ShippingTab'
+        'StockManagement.view.vendor.edit.InformationTab'
     ],
     initComponent: function () {
         var me = this;
@@ -37,12 +36,8 @@ Ext.define('StockManagement.view.customer.edit.Form', {
                     deferredRender: false,
                     items: [
                         {
-                            xtype: 'customer.edit.informationTab',
-                            title: 'Customer Information'
-                        },
-                        {
-                            xtype: 'customer.edit.shippingTab',
-                            title: 'Shipping Address'
+                            xtype: 'vendor.edit.informationTab',
+                            title: 'Vendor Information'
                         }
                     ]
                 }

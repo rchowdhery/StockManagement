@@ -104,7 +104,7 @@ Ext.define('StockManagement.view.layout.Menu', {
                 },
                 {
                     text: 'Customers',
-                    itemId: 'staff3',
+                    itemId: 'customerList',
                     iconCls: 'icon_user'
                 },
                 {
@@ -112,7 +112,7 @@ Ext.define('StockManagement.view.layout.Menu', {
                 },
                 {
                     text: 'Vendors',
-                    itemId: 'staf4',
+                    itemId: 'vendorList',
                     iconCls: 'icon_model'
                 },
                 {

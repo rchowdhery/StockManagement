@@ -414,7 +414,6 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "Ext.grid.RowEditor": [],
   "Ext.grid.RowEditorButtons": [],
-  "Ext.grid.Scroller": [],
   "Ext.grid.View": [],
   "Ext.grid.ViewDropZone": [],
   "Ext.grid.column.Action": [
@@ -848,9 +847,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "ExtThemeNeptune.toolbar.Toolbar": [],
   "StockManagement.controller.App": [],
   "StockManagement.controller.Base": [],
+  "StockManagement.controller.Customer": [],
   "StockManagement.controller.Main": [],
   "StockManagement.controller.Security": [],
   "StockManagement.controller.Stocks": [],
+  "StockManagement.store.CustomerStore": [],
   "StockManagement.store.StockStore": [],
   "StockManagement.store.TimesheetStore": [],
   "StockManagement.store.options.CurrencyStore": [],
@@ -861,6 +862,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "StockManagement.view.SystemNoticeButton": [],
   "StockManagement.view.TimeDisplay": [],
   "StockManagement.view.Viewport": [],
+  "StockManagement.view.customer.CustomerList": [],
+  "StockManagement.view.customer.edit.Form": [],
+  "StockManagement.view.customer.edit.InformationTab": [],
+  "StockManagement.view.customer.edit.ShippingTab": [],
+  "StockManagement.view.customer.edit.Window": [],
   "StockManagement.view.dashboard.Clustered": [],
   "StockManagement.view.inventory.StockList": [],
   "StockManagement.view.inventory.edit.Form": [],
@@ -1317,7 +1323,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.grid.RowEditorButtons": [
     "widget.roweditorbuttons"
   ],
-  "Ext.grid.Scroller": [],
   "Ext.grid.View": [
     "widget.gridview"
   ],
@@ -1885,9 +1890,11 @@ Ext.ClassManager.addNameAliasMappings({
   "ExtThemeNeptune.toolbar.Toolbar": [],
   "StockManagement.controller.App": [],
   "StockManagement.controller.Base": [],
+  "StockManagement.controller.Customer": [],
   "StockManagement.controller.Main": [],
   "StockManagement.controller.Security": [],
   "StockManagement.controller.Stocks": [],
+  "StockManagement.store.CustomerStore": [],
   "StockManagement.store.StockStore": [],
   "StockManagement.store.TimesheetStore": [],
   "StockManagement.store.options.CurrencyStore": [],
@@ -1902,6 +1909,21 @@ Ext.ClassManager.addNameAliasMappings({
   "StockManagement.view.SystemNoticeButton": [],
   "StockManagement.view.TimeDisplay": [],
   "StockManagement.view.Viewport": [],
+  "StockManagement.view.customer.CustomerList": [
+    "widget.customer.CustomerList"
+  ],
+  "StockManagement.view.customer.edit.Form": [
+    "widget.customer.edit.form"
+  ],
+  "StockManagement.view.customer.edit.InformationTab": [
+    "widget.customer.edit.informationTab"
+  ],
+  "StockManagement.view.customer.edit.ShippingTab": [
+    "widget.customer.edit.shippingTab"
+  ],
+  "StockManagement.view.customer.edit.Window": [
+    "widget.customer.edit.window"
+  ],
   "StockManagement.view.dashboard.Clustered": [
     "widget.clustered-column"
   ],
